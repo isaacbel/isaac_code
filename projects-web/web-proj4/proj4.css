@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    --bgcolor:#222327;
+    --textcolor:#fff;
+    --maincolor:#29fd53;
+}
+
+body{
+    min-height: 100vh;
+    background: var(--bgcolor);
+    color: var(--textcolor);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50 ease;
+}
+
+.logo{
+    display: flex;
+    align-items: cneter;
+}
+
+.logo i{
+    color: var(--maincolor);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: var(--textcolor);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--textcolor);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50px ease;
+}
+
+.navbar a:hover{
+    color: var(--maincolor);
+}
+
+.navbar a.active{
+    color: var(--maincolor);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--textcolor);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.user{
+   display: flex;
+   align-items: center;
+
+}
+
+.user i{
+    color: var(--maincolor);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.main a:hover{
+    color: var(--maincolor);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--textcolor);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}

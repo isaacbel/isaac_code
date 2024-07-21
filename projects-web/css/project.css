@@ -1,0 +1,394 @@
+:root{
+    --primerycolor:#ff274b;
+    --secondecolor:#f7bcf7;
+    --lightcolor:#ffffff;
+    --bgcolor1:#171a1c;
+    --bgcolor2:#22282a;
+    --padding:8%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    color: var(--lightcolor);
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor1);
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: var(--primerycolor);
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+nav{
+    
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a{
+    color: var(--lightcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--primerycolor);
+
+}
+
+.btn{
+    background-color: var(--primerycolor);
+    color: var(--lightcolor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primerycolor);
+}
+
+.content{
+    
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-text{
+    position : relative;
+    bottom: 70px;
+}
+
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+h4{
+    font-size: 1.25rem;
+    letter-spacing:0.12rem ;
+    color: var(--secondecolor);
+}
+
+.social{
+    margin-top: 3.5rem;
+
+}
+
+.social a{
+    text-decoration: none;
+}
+.social img{
+    margin-right: 2rem;
+    width:2.5rem ;
+    transition: 0.4s;
+}
+
+.social img:hover{
+    transform: scale(1.2);
+
+}
+
+.home .container-image{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .container-image img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform:translateX(-50%) ;
+    transition: bottom 1s,left 1s;
+}
+
+.home .container-image:hover .shape
+{
+    bottom: 40px;
+}
+.home .container-image:hover .mypic
+{
+    left: 45%;
+}
+
+
+.about{
+    background-color: var(--bgcolor2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+
+.about .container-image{
+    width: 35%;
+}
+
+.about .container-image img{
+    width: 90%;
+}
+
+.about .container-text{
+    width: 35%;
+}
+
+p{
+    color: var(--secondecolor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.services{
+    background-color: var(--bgcolor1);
+    padding: 2rem var(--padding);
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between ;
+    gap: 30px;
+}
+
+.card{
+    width: 300px;
+    background-color: var(--bgcolor2);
+    border-radius: 30px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.card i{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primerycolor);
+    margin:2rem ;
+}
+
+.skills{
+    background-color: var(--bgcolor2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+.skills .container-image{
+    width: 35%;
+}
+
+.skills .container-image img{
+    width: 100%;
+    
+}
+
+.skills .container-skills{
+    width: 50%;
+}
+
+.content-skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+    background-color: var(--lightcolor);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.skill img{
+    width: 70%;
+
+}
+
+
+footer {
+    padding: 2rem var(--padding);
+    background-color: var(--bgcolor1);
+}
+
+footer .content-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer p{
+    color: var(--lightcolor);
+    text-align: center;
+    width: 500px;
+    margin-bottom: 1rem;
+}
+
+footer .content-footer .end{
+    color: var(--primerycolor);
+    margin: 1em;
+}
+
+
+
+#menu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+
+
+}
+
+menu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--lightcolor);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+
+#menu.is-active span:nth-child(1){
+    transform: translate(0px,-2px);
+
+}
+
+#menu.is-active span:nth-child(3){
+    transform: translate(-3px,3px) rotate(-45deg);
+}
+
+menu.is-active span{
+    background-color: var(--primerycolor);
+}
+
+
+@media screen and (max-width: 575px) {
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    .home .container-images {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background-color: var(--bgcolor1);
+        border-bottom: 1px solid var(--bgcolor2);
+        padding-top: 0;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bgcolor2);
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        list-style: none; /* Remove default list styles */
+    }
+
+    nav ul.is-active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .container-text {
+        bottom: 0;
+    }
+
+    .social {
+        margin-top: 70px;
+    }
+
+    #menu {
+        display: block;
+    }
+}
